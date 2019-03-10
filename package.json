@@ -1,0 +1,21 @@
+{
+  "name": "vue-tutorial1",
+  "version": "1.0.0",
+  "description": "twgl.js library test",
+  "main": "src/app.js",
+  "author": "nami634",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "twgl.js": "^4.9.0",
+    "vue": "^2.5.21",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "webpack-dev-server --hot --inline --watch-content-base ",
+    "build": "webpack --mode production"
+  }
+}
