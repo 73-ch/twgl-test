@@ -8,6 +8,21 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js'
     },
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
+      {
+        test: /\.(glsl|vert|frag)$/,
+        loader: 'webpack-glsl-loader'
+      }
+    ]
+  },
   output: {
     filename: "index.js",
     path: __dirname + '/public/js',
